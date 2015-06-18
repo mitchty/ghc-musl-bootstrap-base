@@ -2,6 +2,7 @@ FROM ubuntu:14.04
 
 WORKDIR /tmp
 ENV cross_base /opt/cross
+ENV musl_triple x86_64-linux-musl
 ENV PATH=$cross_base:$PATH
 
 RUN \
